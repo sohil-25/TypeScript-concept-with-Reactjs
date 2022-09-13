@@ -3,7 +3,7 @@ import { Greet } from './components/Greet';
 
 function App() {
   return (
-    <Greet/>
+    <Greet name="peter" />
   );
 }
 
