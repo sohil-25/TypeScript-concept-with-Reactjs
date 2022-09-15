@@ -19,6 +19,9 @@ import { User2 } from "./components/context/User2";
 import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
 import { CounterClass } from "./components/class/CounterClass";
+import { Private } from "./components/auth/Private";
+import { Profiler } from "react";
+import { Profile } from "./components/auth/Profile";
 
 function App() {
   const personName = {
@@ -88,6 +91,8 @@ function App() {
       <MutableRef />
       <br/> <br/>
       <CounterClass message='ts props in class component' />
+      <br/> <br/>
+      <Private isLoggedIn={true} component={Profile}/>
     </div>
   );
 }
