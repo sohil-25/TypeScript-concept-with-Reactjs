@@ -14,6 +14,8 @@ import { User } from "./components/state/User";
 import { Counter } from "./components/state/Counter";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { Box } from "./components/context/Box";
+import { UserContextProvider } from "./components/context/UserContext";
+import { User2 } from "./components/context/User2";
 
 function App() {
   const personName = {
@@ -73,6 +75,10 @@ function App() {
       <ThemeContextProvider>
         <Box/>
       </ThemeContextProvider>
+      <br/> <br/>
+      <UserContextProvider>
+        <User2/>
+      </UserContextProvider>
     </div>
   );
 }
