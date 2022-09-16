@@ -26,6 +26,7 @@ import { RandomNumber } from "./components/restrition/RandomNumber";
 import { Toast } from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/CustomButton";
 import { CustomInput } from "./components/html/Input";
+import { CustomComponent } from "./components/html/CustomComponent";
 
 function App() {
   const personName = {
@@ -123,6 +124,8 @@ function App() {
         Primary Button
       </CustomButton>
       <CustomInput style={{backgroundColor:'red'}} />
+      <br/><br/>
+      <CustomComponent name='extracting component props type' isLoggedIn={true}/>
     </div>
   );
 }
