@@ -20,8 +20,8 @@ import { DomRef } from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
 import { CounterClass } from "./components/class/CounterClass";
 import { Private } from "./components/auth/Private";
-import { Profiler } from "react";
 import { Profile } from "./components/auth/Profile";
+import { List } from "./components/generics/List";
 
 function App() {
   const personName = {
@@ -93,6 +93,22 @@ function App() {
       <CounterClass message='ts props in class component' />
       <br/> <br/>
       <Private isLoggedIn={true} component={Profile}/>
+      <br/> <br/>
+      <List 
+         items={['Banana', 'Superman','Wonder Woman']}
+         onClick={(item)=>console.log(item)
+         }
+      />
+       <List 
+        items={[1,2,3]}
+         onClick={(item)=>console.log(item)
+         }
+      />
+      <List 
+        items={nameList}
+         onClick={(item)=>console.log(item)
+         }
+      />
     </div>
   );
 }
