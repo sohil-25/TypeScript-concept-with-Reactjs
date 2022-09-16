@@ -23,6 +23,7 @@ import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restrition/RandomNumber";
+import { Toast } from "./components/templateliterals/Toast";
 
 function App() {
   const personName = {
@@ -112,6 +113,8 @@ function App() {
       />
       <br/><br/>
       <RandomNumber value={23} isPositive/>
+      <br/><br/>
+      <Toast position="center" />
     </div>
   );
 }
