@@ -1,4 +1,3 @@
-import { Stats } from "fs";
 import "./App.css";
 import { Button } from "./components/Button";
 import { Container } from "./components/Container";
@@ -27,6 +26,7 @@ import { Toast } from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/CustomButton";
 import { CustomInput } from "./components/html/Input";
 import { CustomComponent } from "./components/html/CustomComponent";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   const personName = {
@@ -126,6 +126,10 @@ function App() {
       <CustomInput style={{backgroundColor:'red'}} />
       <br/><br/>
       <CustomComponent name='extracting component props type' isLoggedIn={true}/>
+      <br/><br/>
+      <Text as={'h1'} color="primary" >Header with polymorphic component</Text>
+      <Text as={'p'} size='md'>paragraph</Text>
+      <Text as={'label'} htmlFor='someId' color='secondary'>Label</Text>
     </div>
   );
 }
